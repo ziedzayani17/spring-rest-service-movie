@@ -1,0 +1,4 @@
+com/angular/formation/restangularformation/RestAngularFormationApplication.class
+com/angular/formation/restangularformation/controller/MovieController.class
+com/angular/formation/restangularformation/entity/Movie.class
+com/angular/formation/restangularformation/repository/MovieRepository.class
