@@ -28,17 +28,17 @@ public class MovieController {
     private MovieRepository movieRepository;
 
     @GetMapping("/movies")
-    public List <Movie> getAllEmployees() {
+    public List <Movie> getAll() {
         return movieRepository.findAll();
     }
     
     @PostMapping("/movies")
-    public Movie createEmployee(@Valid @RequestBody Movie movie) {
+    public Movie createMovie(@Valid @RequestBody Movie movie) {
         return movieRepository.save(movie);
     }
     
     @DeleteMapping("/employees/{id}")
-    public Map < String, Boolean > deleteEmployee(@PathVariable(value = "id") Long employeeId)
+    public Map < String, Boolean > deleteMovie(@PathVariable(value = "id") Long employeeId)
     {
         Movie movie = movieRepository.findById(employeeId).get();
 
